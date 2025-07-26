@@ -1,0 +1,40 @@
+{
+  "name": "subzero-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to initialize projects and add modules",
+  "main": "dist/index.js",
+  "bin": {
+    "subzero-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "template",
+    "generator"
+  ],
+  "author": "Subzero",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.1.1",
+    "simple-git": "^3.19.1",
+    "glob": "^10.3.3",
+    "execa": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/fs-extra": "^11.0.1",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist"
+  ]
+}
