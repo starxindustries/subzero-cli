@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+# Project Rules: Modular CLI Next.js Application
+
+This project is a modular CLI library that creates a scalable, plugin-based architecture for Next.js projects. Modules can be dynamically added, configured, or removed to extend application features, following strict standards to ensure maintainability and compatibility.
+
+We have a skeleton project in which we will fit all the modules . 
+Modules contains all the things which my require a functionality to be adapted by project , such as frontend components , hooks , handlers , server actions , API's and/or a database schema .

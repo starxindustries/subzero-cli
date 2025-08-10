@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "es6"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@subzero/cli": ["./packages/cli/src"],
+      "@subzero/shared": ["./packages/shared/src"],
+      "@subzero/auth": ["./packages/modules/auth/src"],
+      "@subzero/roles": ["./packages/modules/roles/src"],
+      "@subzero/tables": ["./packages/modules/tables/src"],
+      "@subzero/forms": ["./packages/modules/forms/src"],
+      "@subzero/dashboard": ["./packages/modules/dashboard/src"],
+      "@subzero/files": ["./packages/modules/files/src"],
+      "@subzero/notifications": ["./packages/modules/notifications/src"],
+      "@subzero/bridge": ["./packages/modules/bridge/src"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build"]
+} 
